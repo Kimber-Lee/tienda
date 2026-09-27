@@ -1,0 +1,109 @@
+body { 
+    font-family: Arial, sans-serif; 
+    padding: 20px; 
+}
+
+.search-container { 
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+#results-container { 
+    margin-top: 20px; 
+    text-align: center; 
+}
+
+#notificacion-promocion{
+    transition: all 0.3s ease-in-out;
+}
+
+.header { 
+    text-align: right; 
+    margin-bottom: 20px; 
+}
+
+.producto-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    width: 220px;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+
+.btn-agregar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #4CAF50;
+}
+
+.btn-agregar:hover {
+    background-color: white;
+    color:#4CAF50;
+}
+
+.forms {
+    display: flex;
+    justify-content: center; 
+    align-items: stretch; 
+    gap: 40px; 
+    margin-top: 40px;
+}
+
+
+.form-container {
+    background-color: #f4f4f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0; 
+    
+    width: 40%; 
+    max-width: 480px; 
+    
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}
+
+
+.form-container label {
+    display: inline-block;
+    width: 170px; 
+    vertical-align: top;
+    margin-top: 8px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="email"],
+.form-container select,
+.form-container textarea {
+    width: calc(100% - 180px); 
+    padding: 8px;
+    margin-bottom: 15px; 
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
