@@ -35,8 +35,11 @@ class Pedido {
 
     public function actualizarEstado($nuevoEstado) {
         $estadosPermitidos = ['Pendiente', 'Pagado', 'En Preparación', 'Enviado', 'Entregado', 'Cancelado'];
-        if (in_array($nuevoEstado, $estadosPermitidos)) {
-            $this->estado = $nuevoEstado;
+        
+        // trim() para evitar fallos por espacios accidentales y comparación estricta en in_array
+        $estadoLimpio = trim($nuevoEstado);
+        if (in_array($estadoLimpio, $estadosPermitidos, true)) {
+            $this->estado = $estadoLimpio;
             return true;
         }
         return false;
